@@ -45,7 +45,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-           1080000
+           288000
         ],
         "range": {
             "min": 0,
@@ -72,7 +72,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-            0.18
+            0.25
         ],
         "range": {
             "min": 0,
@@ -100,7 +100,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-           1e+99
+           388000
         ],
         "range": {
             "min": "_tbrk1",
@@ -128,7 +128,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-            0.18
+            0.30
         ],
         "range": {
             "min": 0,
@@ -157,7 +157,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-           2e+99
+           6000000
         ],
         "range": {
             "min": "_tbrk2",
@@ -185,7 +185,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-            0.18
+            0.325
         ],
         "range": {
             "min": 0,
@@ -214,18 +214,74 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
+                9600000
+        ],
+        "range": {
+            "min": "_tbrk3",
+            "max": "_tbrk5"
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+    },
+    "_rate5": {
+        "long_name": "PIT tax rate 2",
+        "description": "The second lowest tax rate, applied to the portion of taxable income below tax bracket 2 and above tax bracket 1.",
+        "itr_ref": "R code",
+        "notes": "",
+        "row_var": "AYEAR",
+        "row_label": [
+            "2018"
+        ],
+        "start_year": 2018,
+        "cpi_inflatable": false,
+        "cpi_inflated": false,
+        "col_var": "",
+        "col_label": "",
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [
+            0.35
+        ],
+        "range": {
+            "min": 0,
+            "max": 1
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop"
+        
+    },
+    "_tbrk5": {
+        "long_name": "PIT tax bracket 2 (upper threshold)",
+        "description": "Income below this threshold and above tax bracket 1 is taxed at tax rate 2.",
+        "itr_ref": "R code",
+        "notes": "",
+        "row_var": "AYEAR",
+        "row_label": [
+            "2018"
+        ],
+        "start_year": 2018,
+        "cpi_inflatable": true,
+        "cpi_inflated": false,
+        "col_var": "",
+        "col_label": [
+        ],
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [
                 9e+99
         ],
         "range": {
-            "min": 9e+99,
+            "min": "_tbrk4",
             "max": 9e+99
         },
         "out_of_range_minmsg": "",
         "out_of_range_maxmsg": "",
         "out_of_range_action": "stop"
     },
-     "_ave_gross_wage": {
-        "long_name": "Average Gross Wage",
+     "_EXEMPTION_AMT": {
+        "long_name": "Exemption for the Disabled",
         "description": "Estimated by State Statistical Office",
         "itr_ref": "34079 LCU",
         "notes": "",
@@ -241,7 +297,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-            34079 
+            150000 
         ],
         "range": {
             "min": 0,
@@ -251,7 +307,7 @@
         "out_of_range_maxmsg": "",
         "out_of_range_action": "stop" 
     }, 
-     "_number_of_wages_ssc": {
+     "_PERSONAL_RELIEF": {
         "long_name": "Average Gross Wage",
         "description": "Estimated by State Statistical Office",
         "itr_ref": "34079 LCU",
@@ -268,7 +324,7 @@
         "boolean_value": false,
         "integer_value": false,
         "value": [
-            16 
+            28800
         ],
         "range": {
             "min": 0,

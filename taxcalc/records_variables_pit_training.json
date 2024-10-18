@@ -1,6 +1,6 @@
 {
   "read": {
-    "id_n": {
+    "UNIQUE_ID": {
       "required": true,
       "type": "int",
       "desc": "Unique positive numeric identifier for filing unit",
@@ -20,7 +20,7 @@
       "cross_year": "No",
       "attribute": "No"
     },
-    "income_wage_l": {
+    "CHARGEABLE_INCOME": {
       "type": "float",
       "desc": "Gross income from Salary, other personal income based on employment and pensions",
       "form": {
@@ -29,7 +29,7 @@
       "cross_year": "No",
       "attribute": "No"
     },
-    "gross_i_w": {
+    "MORTAGE_INTEREST": {
       "type": "float",
       "desc": "Gross income from wages",
       "form": {
@@ -38,7 +38,7 @@
       "cross_year": "No",
       "attribute": "No"
     },
-    "income_add_l": {
+    "IS_EXEMPT_CERT_PRSNT_1": {
       "type": "float",
       "desc": "Gross income from additional income on which contributions have not been paid",
       "form": {
@@ -47,7 +47,7 @@
       "cross_year": "No",
       "attribute": "No"
     },
-    "income_supvr_l": {
+    "INSURANCE_RELIEF": {
       "type": "float",
       "desc": "Gross income from Income of members of the management bodies and the supervisory bodies in the trade companies",
       "form": {
@@ -56,7 +56,7 @@
       "cross_year": "No",
       "attribute": "No"
     },
-    "income_officials_l": {
+    "HOME_OWN_SAVING_PLAN_DEP": {
       "type": "float",
       "desc": "Gross income from Income of officials, MPs, councilors",
       "form": {
@@ -723,7 +723,7 @@
         "2018": "pit_training"
       }
     },
-    "tti_c_a": {
+    "NTI": {
       "type": "float",
       "desc": "Tax case (total) from capital income except games of chance",
       "form": {
@@ -758,23 +758,16 @@
         "2018": "pit_training"
       }
     },
-    "pit_c": {
-      "type": "float",
-      "desc": "Pit liability from 'capital'(gross income-deductions)*tax rate",
-      "form": {
-        "2018": "pit_training"
-      }
-    },
-    "net_w_I": {
+    "MORTAGE_INTEREST_CLAIMED": {
       "type": "float",
       "desc": "post tax income from  all labor including wages",
       "form": {
         "2018": "pit_training"
       }
     },
-    "net_c": {
+    "EXEMPTION_CLAIMED": {
       "type": "float",
-      "desc": "post tax income from capital",
+      "desc": "exemption claimed",
       "form": {
         "2018": "pit_training"
       }

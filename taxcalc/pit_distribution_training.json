@@ -1,17 +1,17 @@
 {
   "DIST_VARIABLES": [
     "weight",
-    "total_gross_income",
+    "CHARGEABLE_INCOME",
     "pitax"
   ],
   "DIST_TABLE_COLUMNS": [
     "weight",
-    "total_gross_income",
+    "CHARGEABLE_INCOME",
     "pitax"
   ],
   "DIST_TABLE_LABELS": [
     "Returns",
-    "Gross Total Income",
+    "Gross Employment Income",
     "PITax"
   ],
   "DECILE_ROW_NAMES": [
@@ -60,5 +60,5 @@
     10000000.0,
     9e+99
   ],
-  "income_measure": "total_gross_income"
+  "income_measure": "CHARGEABLE_INCOME"
 }
