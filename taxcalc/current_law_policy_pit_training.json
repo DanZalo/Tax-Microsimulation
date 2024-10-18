@@ -334,6 +334,33 @@
         "out_of_range_maxmsg": "",
         "out_of_range_action": "stop" 
     },   
+     "_INSURANCE_RELIEF_LIMIT": {
+        "long_name": "Insurance limit",
+        "description": "Estimated by State Statistical Office",
+        "itr_ref": "34079 LCU",
+        "notes": "",
+        "row_var": "Year",
+        "row_label": [
+            "2018"
+        ],
+        "start_year": 2018,
+        "cpi_inflatable": true,
+        "cpi_inflated": false,
+        "col_var": "",
+        "col_label": "",
+        "boolean_value": false,
+        "integer_value": false,
+        "value": [
+            60000
+        ],
+        "range": {
+            "min": 0,
+            "max": 9e+99
+        },
+        "out_of_range_minmsg": "",
+        "out_of_range_maxmsg": "",
+        "out_of_range_action": "stop" 
+    },   
     "_ssc_rate": {
         "long_name": "Social Security Contributions",
         "description": "This rate at which social security contributions are taxed.",
