@@ -28,6 +28,16 @@ def cal_mortgage_interest(MORTAGE_INTEREST,MORTAGE_INTEREST_CLAIMED):
         MORTAGE_INTEREST_CLAIMED = 0.15*300000
     return MORTAGE_INTEREST_CLAIMED
 
+"Calculation for insurance relief"
+@iterate_jit(nopython=True)
+def cal_insurance_relief(INSURANCE_RELIEF_LIMIT, INSURANCE_RELIEF,INSURANCE_RELIEF_ALLOWED):
+    if(INSURANCE_RELIEF<=INSURANCE_RELIEF_LIMIT):
+        INSURANCE_RELIEF_ALLOWED = INSURANCE_RELIEF
+    else:
+        INSURANCE_RELIEF_ALLOWED = INSURANCE_RELIEF_LIMIT
+           
+    return INSURANCE_RELIEF_ALLOWED
+
 "Calculation for net taxable income"
 @iterate_jit(nopython=True)
 def cal_taxable_income(CHARGEABLE_INCOME, MORTAGE_INTEREST_CLAIMED, EXEMPTION_CLAIMED, NTI):
@@ -37,7 +47,7 @@ def cal_taxable_income(CHARGEABLE_INCOME, MORTAGE_INTEREST_CLAIMED, EXEMPTION_CL
 
 "Calculation for PIT from wages only"
 @iterate_jit(nopython=True)
-def cal_pit_w(NTI, rate1, rate2, rate3, rate4, rate5, tbrk1, tbrk2, tbrk3, tbrk4, pit_w):
+def cal_pit_w( rate1, rate2, rate3, rate4, rate5, tbrk1, tbrk2, tbrk3, tbrk4, NTI, pit_w):
     """
     Compute tax liability given the progressive tax rate schedule specified
     by the (marginal tax) rate* and (upper tax bracket) brk* parameters and
